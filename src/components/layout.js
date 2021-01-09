@@ -9,7 +9,6 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import Header from './header'
 import './layout.css'
-import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
 
 const Layout = (props) => {
 	const data = useStaticQuery(graphql`
