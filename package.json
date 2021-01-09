@@ -1,11 +1,10 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "beyazhap",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Beyaz Hap filmi için web sitesi",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Teoman Tuncer <teomantuncer@gmail.com>",
   "dependencies": {
-    "@splidejs/react-splide": "^0.4.4",
     "autoprefixer": "^10.2.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
@@ -32,7 +31,7 @@
     "prettier": "2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "beyazhap"
   ],
   "license": "0BSD",
   "scripts": {
@@ -41,14 +40,13 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/teomantuncer/beyazhap"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/teomantuncer/beyazhap/issues"
   }
 }
