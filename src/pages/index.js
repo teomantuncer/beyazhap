@@ -8,6 +8,9 @@ const IndexPage = ({
 	location,
 	data
 }) => {
+	if (typeof window === "undefined") {
+		return <p>Server Render</p>
+	}
 	const rand = Math.floor(Math.random() * data.allFile.edges.length - 3)
 	return <Layout location={location}>
 		<SEO title="Ana Sayfa" />
