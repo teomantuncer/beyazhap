@@ -6,7 +6,7 @@
  */
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import './layout.css'
 
@@ -20,12 +20,12 @@ const Layout = (props) => {
             }
         }
 	`)
-	const page = props.location.pathname
+	// const page = props.location.pathname
 	return (
 		<>
 			<Header siteTitle={data.site.siteMetadata?.title || `Title`} />
 			<main>{props.children}</main>
-			{!page.includes('destek-ol') && (
+			{/*{!page.includes('destek-ol') && (
 				<div className="bg-gray-50">
 					<div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-12 lg:px-8 lg:flex lg:items-center lg:justify-between">
 						<h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -40,12 +40,12 @@ const Layout = (props) => {
 						</div>
 					</div>
 				</div>
-			)}
+			)}*/}
 			<footer>
-				<div className="border-t-2 border-gray-300 flex flex-col items-center">
+				<div className="border-t-2 border-gray-300 dark:border-gray-800 flex flex-col items-center">
 					<div className="sm:w-2/3 text-center py-6">
-						<p className="text-sm text-gray-800 mb-2">
-							© {new Date().getFullYear()}, Built with <a className="text-blue-800" target="_blank" rel="noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>, hosted by <a className="text-blue-800" target="_blank" rel="noreferrer" href="https://www.netlify.com">Netlify</a>, developed by <a className="text-blue-800" target="_blank" rel="noreferrer" href="https://github.com/teomantuncer">teomantuncer</a>
+						<p className="text-sm text-gray-800 dark:text-white mb-2">
+							© {new Date().getFullYear()}, Built with <a className="text-blue-800 dark:text-blue-200" target="_blank" rel="noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>, hosted by <a className="text-blue-800 dark:text-blue-200" target="_blank" rel="noreferrer" href="https://www.netlify.com">Netlify</a>, developed by <a className="text-blue-800 dark:text-blue-200" target="_blank" rel="noreferrer" href="https://github.com/teomantuncer">teomantuncer</a>
 						</p>
 					</div>
 				</div>

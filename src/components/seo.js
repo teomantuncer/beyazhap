@@ -13,6 +13,7 @@ function SEO ({
 	description,
 	lang,
 	meta,
+	dark,
 	title
 }) {
 	const { site } = useStaticQuery(
@@ -34,6 +35,9 @@ function SEO ({
 		<Helmet
 			htmlAttributes={{
 				lang
+			}}
+			bodyAttributes={{
+				class: 'dark:bg-grey-900'
 			}}
 			title={title}
 			titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}

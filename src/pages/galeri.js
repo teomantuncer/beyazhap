@@ -8,9 +8,9 @@ const SecondPage = ({ data, location }) => {
 	let [modal, setModal] = useState(false)
 	return <Layout location={location}>
 		<SEO title="Galeri" />
-		<header className="bg-white shadow">
+		<header className="bg-white shadow dark:bg-dark-200">
 			<div className="mx-auto max-w-7xl py-8 px-3 sm:px-6 lg:px-8 xl:px-0">
-				<h1 className="text-3xl font-bold leading-tight text-gray-900">
+				<h1 className="text-3xl font-bold leading-tight text-gray-900 dark:text-white">
 					Galeri
 				</h1>
 			</div>
@@ -18,7 +18,7 @@ const SecondPage = ({ data, location }) => {
 		<main>
 			<div className="mx-auto max-w-7xl py-8 px-3 sm:px-6 lg:px-8 xl:px-0">
 				<div className="px-4 py-6 sm:px-0">
-					<div className="grid grid-cols-3 gap-0.5">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5">
 						{data.allFile.edges.map(edge => {
 							return <div key={edge.node.id} onClick={() => setModal(edge.node)} style={{cursor: 'pointer'}} aria-hidden="true">
 								<Image filename={edge.node.base} />
